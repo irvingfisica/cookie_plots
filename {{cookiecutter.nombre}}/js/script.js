@@ -1,17 +1,21 @@
 const div = document.querySelector("#graf");
 
-const datap = d3.csv({{cookiecutter.data}}, (d) => {
-    return {
-        x: +d.x,
-        y: +d.y,
-    }
-});
+const datap = d3.json({{cookiecutter.data}});
 
 datap.then(function(data) {
 
     const plot = Plot.plot({
+        color: {legend:true},
         marks: [
-            Plot.lineY(data, {x:"x",y:"y"})
+            Plot.dot(data, {
+                x:"Horsepower",
+                y:"Miles_per_Gallon",
+                r:"Acceleration",
+                fill:"Origin",
+                stroke:"black",
+                strokeWidth: 0.5,
+                tip: true  
+            })
         ]
     });
     

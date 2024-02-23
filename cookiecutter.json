@@ -3,5 +3,5 @@
     "titulo": "Titulo de la gráfica",
     "descripcion": "Descripción de la gráfica",
     "fuente": "Datos propios",
-    "data": "\"../resources/datos/data.csv\""
+    "data": "\"../resources/datos/data.json\""
 }
