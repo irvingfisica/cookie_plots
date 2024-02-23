@@ -5,7 +5,7 @@ const datap = d3.csv({{cookiecutter.data}}, (d) => {
         x: +d.x,
         y: +d.y,
     }
-);
+});
 
 datap.then(function(data) {
 
