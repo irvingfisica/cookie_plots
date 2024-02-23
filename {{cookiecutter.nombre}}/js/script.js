@@ -1,13 +1,16 @@
 const div = document.querySelector("#graf");
 
-//const plot = Plot.rectY({length: 10000}, Plot.binX({y: "count"}, {x: Math.random})).plot();
+const datap = d3.csv({{cookiecutter.data}});
 
-const data = await d3.csv({{cookiecutter.data}});
+datap.then(function(data) {
 
-const plot = Plot.plot({
-    marks: [
-        Plot.rectY({length: 10000}, Plot.binX({y: "count"}, {x: Math.random}))
-    ]
-});
+    const plot = Plot.plot({
+        marks: [
+            Plot.lineY(data, {x:"x",y:"y"})
+        ]
+    });
+    
+    div.append(plot);
 
-div.append(plot);
+})
+
