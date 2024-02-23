@@ -1,3 +1,6 @@
 {
-    "nombre": "grafica"
+    "nombre": "grafica",
+    "titulo": "Titulo de la gráfica",
+    "descripcion": "Descripción de la gráfica",
+    "fuente": "Datos propios"
 }
