@@ -2,5 +2,6 @@
     "nombre": "grafica",
     "titulo": "Titulo de la gráfica",
     "descripcion": "Descripción de la gráfica",
-    "fuente": "Datos propios"
+    "fuente": "Datos propios",
+    "data": "../datos/data.csv"
 }
