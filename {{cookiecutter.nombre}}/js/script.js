@@ -1,6 +1,11 @@
 const div = document.querySelector("#graf");
 
-const datap = d3.csv({{cookiecutter.data}});
+const datap = d3.csv({{cookiecutter.data}}, (d) => {
+    return {
+        x: +d.x,
+        y: +d.y,
+    }
+);
 
 datap.then(function(data) {
 
