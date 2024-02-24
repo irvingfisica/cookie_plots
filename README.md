@@ -6,7 +6,10 @@ Este es un template para generar gráficos usando [Plotjs](https://observablehq.
 Requerimientos
 ------------
 Python
-Instalar `cookiecutter`, desde la línea de comandos: `pip install cookiecutter`    
+
+Instalar `cookiecutter`
+
+desde la línea de comandos: `pip install cookiecutter`    
 
 Uso
 -----
