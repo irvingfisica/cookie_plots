@@ -6,11 +6,12 @@ datap.then(function(data) {
 
     const plot = Plot.plot({
         color: {legend:true},
+        r: {range:[0,7]},
         marks: [
             Plot.dot(data, {
                 x:"Horsepower",
                 y:"Miles_per_Gallon",
-                r:"Acceleration",
+                r:"Displacement",
                 fill:"Origin",
                 stroke:"black",
                 strokeWidth: 0.5,
