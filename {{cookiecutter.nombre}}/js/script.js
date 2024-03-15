@@ -24,3 +24,20 @@ datap.then(function(data) {
 
 })
 
+d3.select('#descargar')
+  .on('click', function() {
+    downloadImage('#grafica', 'grafica.png');
+  });
+
+function downloadImage(selector, filename) {
+    const div = document.querySelector(selector);
+
+    html2canvas(div).then(function(canvas) {
+        const a = document.createElement('a');
+        a.download = filename;
+        a.href = canvas.toDataURL('image/png');
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    });
+}
