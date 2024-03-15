@@ -13,7 +13,7 @@ desde la línea de comandos: `pip install cookiecutter`
 
 Uso
 -----
-Para crear un proyecto de gráfica nuevo:
+Para crear un proyecto de gráfica nuevo, desde la terminal y en la carpeta donde vayas a guardar tu proyecto usa cookiecutter con este repo:
 
 `cookiecutter gh:irvingfisica/cookie_plots`
 
